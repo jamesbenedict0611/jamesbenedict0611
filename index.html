@@ -1,0 +1,252 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="icon" href="img/paw.png">
+    <title>Meowsite</title>
+    <style>
+        header{
+            background: url('img/bckg.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        }
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
+        .gallery-item {
+            margin-bottom: 30px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 210px;
+            border-radius: 8px;
+        }
+        .gallery-title {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .hover-effect {
+        width: 100%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-effect:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-title {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+        }
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="brand-logo">Meowsite</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#photo's">Origin</a></li>
+                    <li><a href="#services">Features</a></li>
+                    <li><a href="#checkout">Checkout</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fiamnot_bndct%2Fprofilecard%2F%3Figsh%3DMWhkNDlwNDNyZGVyMg%253D%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR2ZAHGOXpiCzLoUBmPXc7IgWhSdOjFDJJKPF3uV2WYvKh5-TqeA3rrSfuc_aem_Xhb41Xk3T5MQtDzrkZqTTQ&h=AT3_AYY4w_SaWrnDPj9PHLZheUmRQ6IlPVoTLWuidd-07to7azh5B1yEgPd90Ey1SLZQCXIfXl45urZC0NGA97FTB4czr256QXGaFzlDhmxzLhpUAjIW7yOiNSF6SvfC2_8pbwUimrsYvI0" class="tooltipped btn-floating btn-small transparent" data-tooltip="This is my Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                    <li><a href="https://www.facebook.com/benedict.james06" class="tooltipped btn-floating btn-small transparent" data-tooltip="This is my Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                    <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2Fjim_jims11%3Ft%3DR-BtTYxOwdQ-PGmgGFmN-A%26s%3D07%26fbclid%3DIwZXh0bgNhZW0CMTAAAR3iaRnIoYQmcDx2JvvqOYlX6nX45jdIqMN6sL9Ei9XCvQkMe0pakOTL4rs_aem_fbKBcsb4a91qiIU2x0N50g&h=AT3Uk0j4OAOXKii15K3AocteEL-znX8dPtkjsu55lLw4ako3eUPGAe7663apszANpa-Lmd5vviLCKoYvJpS9yx_ZIWXBuW-JcOEkAzcwRxm0lqAEDShAjI-E9U8DLd5Pndhnqg" class="tooltipped btn-floating btn-small transparent" data-tooltip="This is my twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a></li>
+                </ul>
+                <ul class="sidenav grey lighte-2" id="mobile-menu">
+                    <li><a href="#photo's">Origin</a></li>
+                    <li><a href="#services">Features</a></li>
+                    <li><a href="#checkout">Checkout</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container section scrollspy" id="photo's">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/cars.webp" alt="" class="responsive-img materialbox">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigp-text text-darken-2">What is a Cat?</h2>
+                <p>cat, (Felis catus), domesticated member (felid) of the family Felidae. The family is generally divided between cats from the subfamily Pantherinae, which roar (including lions, tigers, and leopards), and cats from the subfamily Felinae, which purr instead (including cougars, bobcats, and domestic cats). According to the latest research, purring likely stems from a special pad within the folds of a cat’s vocal cords, which adds an additional layer of fatty tissue that enables the folds to vibrate (purr) at low frequencies. Domestic cats are characterized by retractable claws, powerful bodies, acute senses, long tails, and specialized teeth adapted for hunting prey.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/origin.webp" alt="" class="responsive-img materialbox">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h2 class="indigp-text text-darken-2">Their Origin</h2>
+                <p>After the nonavian dinosaurs became extinct, mammals became the dominant life forms. The first felinelike mammal, Proailurus, evolved about 30 million years ago. It is thought that all true cat species evolved from this small civetlike predator.
+
+                Cats that resemble today’s felids first appeared in the early Pliocene Epoch (5.3 to 3.6 million years ago), and they have continued into present times with remarkably few changes. The original design of fang and claw, flexible backbone, muscular strength, and agility allowed felids to survive and adapt to the changes brought by each new era. Adaptations have occurred with changes in prey, but the basic body type has stayed the same.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/association.webp" alt="" class="responsive-img materialbox">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="indigp-text text-darken-2">Association with Human Culture</h2>
+                <p>Cats have also figured prominently in assorted religions and world literatures. Surprisingly, the cat is mentioned only once in the Bible, in the Letter of Jeremiah. The Norse goddess Freyja was said to have a golden chariot pulled by two white longhaired cats, and the Egyptians revered a cat-headed goddess named Bastet. The Cat-Book Poems, a document dating from the Ayutthayan period (1351–1767) in Ayudhya, Siam (now in Thailand), contains illustrations and descriptions of various cats.</p>
+            </div>
+        </div>
+
+    </section>
+    
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/scroll.gif" alt="" class="responsive-img">
+        </div>
+    </div>
+
+    <div class="container section scrollspy" id="services">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="indigo-text text-darken-4">Body Types & features</h2>
+                <p>Cats come in a variety of shapes and sizes, but their body types are generally grouped into three main categories: cobby, svelte, and moderate. Cobby-bodied cats, such as Persians, are sturdy and compact, with broad shoulders, a deep chest, and a round, full head. Svelte cats, like the Siamese, are elegant and slim, characterized by their long, tapering features, a wedge-shaped head, and a slender, elongated tail. The moderate type, found in breeds like the European Burmese, strikes a balance between the two, with proportions that are neither too stocky nor too slender.</p>
+                <p>In terms of size, a full-grown domestic cat typically measures about 28 inches (71 cm) long for males and 20 inches (51 cm) for females. Their weight ranges from 6 to 12 pounds (2.7 to 5.44 kg), though this can vary widely depending on the breed and individual. For instance, the Savannah cat stands out with a height of up to 17 inches (43 cm) and a length of 22 inches (56 cm), while Munchkin cats are known for their petite stature, standing just 5 to 7 inches (13 to 18 cm) tall due to their short legs. The Maine Coon, one of the largest domestic breeds, can reach an impressive weight of up to 22 pounds (10 kg).</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#photography"class="indigo-text text-darken-4">Coordination</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#editing"class="indigo-text text-darken-4">Muscular Structure</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="photography">
+                    <p class="flow-text indigo-text text-darken-4">COORDINATION</p>
+                    <p>Cats are renowned for their exceptional coordination, which is a result of their finely tuned muscular and nervous systems. Their flexible spines, powerful hind legs, and retractable claws allow them to leap great heights, maintain incredible balance, and land gracefully on their feet—a phenomenon known as the "righting reflex." This reflex enables cats to twist their bodies mid-air to orient themselves for a safe landing. Their sharp senses, including keen eyesight and whiskers that detect changes in air currents, further enhance their spatial awareness, making them skilled hunters and agile climbers. Combined, these traits give cats unparalleled precision and control over their movements, whether stalking prey or navigating tight spaces.</p>
+                    <img src="img/anatomy-cat.jpg" alt="">
+                </div>
+                <div class="col s12" id="editing">
+                    <p class="flow-text indigo-text text-darken-4">MUSCULAR STRUCTURE</p>
+                    <p>A cat’s muscular structure is uniquely adapted for agility and flexibility, largely due to its spinal column, where the vertebrae are connected by muscles instead of ligaments. This design allows for remarkable range and fluidity of movement, enabling cats to twist, stretch, and leap with ease. Their highly flexible shoulder joints allow the forelegs to rotate in nearly any direction, providing exceptional maneuverability during pursuits or tight turns. This muscle coordination is also key to the cat's renowned "righting reflex," allowing them to almost always land gracefully on their feet when they fall or jump.</p>
+                    <img src="img/anatomy-cat.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="parallax-container" id="paral">
+        <div class="parallax">
+            <img src="img/scroll.gif" alt="" class="responsive-img">
+        </div>
+    </div>
+
+    <div class="container section scrollspy" id="checkout">
+        <h1>Checkout this!</h1>
+        <div class="row">
+            <div class="col s12 m6 gallery-item">
+                <a href="memes.html">
+                    <img src="img/meme.avif" alt="Image 1" class="hover-effect">
+                    <div class="gallery-title">Cat Memes</div>
+                </a>
+            </div>
+            <div class="col s12 m6 gallery-item">
+                <a href="videos.html">
+                    <img src="img/mwah.jpg" alt="Image 2" class="hover-effect">
+                    <div class="gallery-title">Random Cat Videos</div>
+                </a>
+            </div>
+            <div class="col s12 m6 gallery-item">
+                <a href="game.html">
+                    <img src="img/flappy.png" alt="Image 3" class="hover-effect">
+                    <div class="gallery-title">Flappy Cat</div>
+                </a>
+            </div>
+            <div class="col s12 m6 gallery-item">
+                <a href="brainrot.html">
+                    <img src="img/brainrot2.jpg" alt="Image 4" class="hover-effect">
+                    <div class="gallery-title">Cat Brainrot</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="page-footer grey darken-3">
+        <div class="container section scrollspy" id="about">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Me</h5>
+                    <p>Yo! I’m James, a devoted cat enthusiast with a passion for all things feline! Whether it’s their playful antics, comforting purrs, or their irresistible charm, I’ve always been captivated by the magic of cats. This space is my way of sharing that love with fellow cat lovers through stories, tips, and fun interactive features designed to celebrate our furry companions.</p>
+                    <p>From exploring the quirky personalities of different breeds to offering advice on keeping your cat happy and healthy, this site is all about connecting with the wonderful world of cats. So, whether you're here to learn, laugh, or simply bask in the joy of cats, you’re in the right place! 🐾</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect to Me via</h5>
+                    <ul>
+                        <li><a href="https://www.facebook.com/benedict.james06" class="grey-text text-lighten-3">Facebook</a></li>
+                        <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2Fjim_jims11%3Ft%3DR-BtTYxOwdQ-PGmgGFmN-A%26s%3D07%26fbclid%3DIwZXh0bgNhZW0CMTAAAR3iaRnIoYQmcDx2JvvqOYlX6nX45jdIqMN6sL9Ei9XCvQkMe0pakOTL4rs_aem_fbKBcsb4a91qiIU2x0N50g&h=AT3Uk0j4OAOXKii15K3AocteEL-znX8dPtkjsu55lLw4ako3eUPGAe7663apszANpa-Lmd5vviLCKoYvJpS9yx_ZIWXBuW-JcOEkAzcwRxm0lqAEDShAjI-E9U8DLd5Pndhnqg" class="grey-text text-lighten-3">Twitter</a></li>
+                        <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fiamnot_bndct%2Fprofilecard%2F%3Figsh%3DMWhkNDlwNDNyZGVyMg%253D%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR2ZAHGOXpiCzLoUBmPXc7IgWhSdOjFDJJKPF3uV2WYvKh5-TqeA3rrSfuc_aem_Xhb41Xk3T5MQtDzrkZqTTQ&h=AT3_AYY4w_SaWrnDPj9PHLZheUmRQ6IlPVoTLWuidd-07to7azh5B1yEgPd90Ey1SLZQCXIfXl45urZC0NGA97FTB4czr256QXGaFzlDhmxzLhpUAjIW7yOiNSF6SvfC2_8pbwUimrsYvI0" class="grey-text text-lighten-3">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey text-darken-4">
+            <div class="container center-align">&copy; 2024 Meowsite</div>
+        </div>
+    </footer>
+
+    
+    <script src="js/jquery.js.txt"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $ (document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.materialbox');
+            M.Materialbox.init(elems);
+        });
+    </script>
+</body>
+</html>
